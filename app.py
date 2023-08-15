@@ -12,7 +12,7 @@ def hello():
 
 @app.route('/yarab')
 def hello():
-    return 'done y amraiaaaa'
+    return 'done y amraiaaaaaa'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
