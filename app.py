@@ -11,7 +11,7 @@ def hello():
     return 'I am good, how about you?'
 
 @app.route('/yarab')
-def hello():
+def automation():
     return 'done y x-lance'
 
 if __name__ == "__main__":
