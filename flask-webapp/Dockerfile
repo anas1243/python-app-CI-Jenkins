@@ -1,3 +1,4 @@
+# Image name on Dockerhub: anas1243/simple-webapp-flask
 FROM ubuntu
 RUN apt update && apt install -y python3 python3-pip
 RUN pip3 install flask
