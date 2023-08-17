@@ -8,7 +8,7 @@
 - name: Create new container from the new image
   community.docker.docker_container:
     name: flask-webapp
-    state: present
+    state: started
     ports:
       - 80:8080
     restart_policy: always
