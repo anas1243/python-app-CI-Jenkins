@@ -9,13 +9,6 @@
   community.docker.docker_container:
     name: flask-webapp
     state: present
-    mounts:
-      - source: /home/ubuntu/jenkins_home
-        target: /var/jenkins_home
-        type: bind
-      - source: /var/run/docker.sock
-        target: /var/run/docker.sock
-        type: bind  
     ports:
       - 80:8080
     restart_policy: always
