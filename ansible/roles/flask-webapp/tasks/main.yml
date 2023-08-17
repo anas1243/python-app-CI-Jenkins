@@ -4,7 +4,7 @@
   community.docker.docker_container:
     name: flask-webapp
     state: absent
-    
+
 - name: Create new container from the new image
   community.docker.docker_container:
     name: flask-webapp
@@ -19,5 +19,5 @@
     ports:
       - 80:8080
     restart_policy: always
-    container_default_behavior: detach
+    detach: true
     image: "anas1243/simple-webapp-flask:{{ lookup('ansible.builtin.env','BUILD_ID') }}"
