@@ -3,6 +3,6 @@
   hosts: webserver
   remote_user: ubuntu
   vars:
-    ansible_ssh_private_key_file: {{ lookup('ansible.builtin.env', 'webserver_ssh_key') }}
+    ansible_ssh_private_key_file: "{{ lookup('ansible.builtin.env', 'webserver_ssh_key') }}"
   roles: 
   - roles/flask-webapp
