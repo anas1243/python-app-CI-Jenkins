@@ -10,7 +10,7 @@ def main():
 def hello():
     return 'I am good, how about you?'
 
-@app.route('/yarab')
+@app.route('/automation')
 def automation():
     return 'done y x-lance'
 
